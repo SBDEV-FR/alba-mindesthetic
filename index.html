@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alba MindEsthetic Studio - Institut d'Esthétique</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#accueil" class="logo">Alba MindEsthetic</a>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#tarifs">Tarifs</a></li>
+                <li><a href="#horaires">Horaires</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Alba MindEsthetic Studio</h1>
+            <p class="tagline">Révélez votre beauté naturelle</p>
+            <a href="#services" class="btn-primary">Découvrir nos soins</a>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- À propos -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Bienvenue</h2>
+            <div class="about-content">
+                <p>Chez <strong>Alba MindEsthetic Studio</strong>, nous vous offrons une expérience unique alliant technologies de pointe et bien-être. Notre expertise en épilation laser, soins du visage HydrActive, radiofréquence, lipocavitation et cryolipolyse vous garantit des résultats visibles et durables.</p>
+                <p class="highlight">Consultation OFFERTE et OBLIGATOIRE avant toute première séance pour établir un protocole de soin adapté et personnalisé.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-category="laser-femme">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>Épilation Laser Femme</h3>
+                    <p>Technologie Diode dernière génération pour une épilation efficace, rapide et durable.</p>
+                    <a href="#tarifs" class="btn-secondary">Voir les tarifs</a>
+                </div>
+
+                <div class="service-card" data-category="laser-homme">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="8" r="5"/>
+                            <path d="M3 21v-2a7 7 0 0114 0v2"/>
+                        </svg>
+                    </div>
+                    <h3>Épilation Laser Homme</h3>
+                    <p>Solutions adaptées pour tous les types de peaux et zones du corps masculin.</p>
+                    <a href="#tarifs" class="btn-secondary">Voir les tarifs</a>
+                </div>
+
+                <div class="service-card" data-category="hydractive">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/>
+                        </svg>
+                    </div>
+                    <h3>Soins Visage HydrActive</h3>
+                    <p>Technologie avancée alliant nettoyage, exfoliation, extraction et hydratation.</p>
+                    <a href="#tarifs" class="btn-secondary">Voir les tarifs</a>
+                </div>
+
+                <div class="service-card" data-category="radiofrequence">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4.93 4.93l4.24 4.24"/>
+                            <path d="M14.83 9.17l4.24-4.24"/>
+                            <path d="M14.83 14.83l4.24 4.24"/>
+                            <path d="M9.17 14.83l-4.24 4.24"/>
+                            <circle cx="12" cy="12" r="4"/>
+                        </svg>
+                    </div>
+                    <h3>Radiofréquence Visage</h3>
+                    <p>Raffermit la peau, lisse les rides et redéfinit les contours pour un effet lifting visible.</p>
+                    <a href="#tarifs" class="btn-secondary">Voir les tarifs</a>
+                </div>
+
+                <div class="service-card" data-category="lipocavitation">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <ellipse cx="12" cy="12" rx="10" ry="6"/>
+                            <path d="M12 6v12"/>
+                        </svg>
+                    </div>
+                    <h3>Lipocavitation Corps</h3>
+                    <p>Ultrasons pour décomposer naturellement la graisse et affiner la silhouette.</p>
+                    <a href="#tarifs" class="btn-secondary">Voir les tarifs</a>
+                </div>
+
+                <div class="service-card" data-category="cryolipolyse">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2v20M2 12h20M6 6l12 12M18 6L6 18"/>
+                        </svg>
+                    </div>
+                    <h3>Cryolipolyse</h3>
+                    <p>Technique d'amincissement et de raffermissement par le froid pour éliminer les cellules graisseuses.</p>
+                    <a href="#tarifs" class="btn-secondary">Voir les tarifs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarifs -->
+    <section id="tarifs" class="tarifs">
+        <div class="container">
+            <h2>Nos Tarifs</h2>
+
+            <!-- Filtres -->
+            <div class="tarif-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="laser-femme">Laser Femme</button>
+                <button class="filter-btn" data-filter="laser-homme">Laser Homme</button>
+                <button class="filter-btn" data-filter="hydractive">HydrActive</button>
+                <button class="filter-btn" data-filter="radiofrequence">Radiofréquence</button>
+                <button class="filter-btn" data-filter="lipocavitation">Lipocavitation</button>
+                <button class="filter-btn" data-filter="cryolipolyse">Cryolipolyse</button>
+            </div>
+
+            <!-- Épilation Laser Femme -->
+            <div class="tarif-category" data-category="laser-femme">
+                <h3>Épilation Laser Femme</h3>
+                <p class="category-info">L'épilation laser Diode dernière génération est une méthode efficace, rapide et durable. Bilan épilation offert - 30 minutes.</p>
+                <div class="tarif-table">
+                    <div class="tarif-item">
+                        <span class="prestation">Petites zones (inter sourcils, menton, joues...)</span>
+                        <span class="duree">40min</span>
+                        <span class="prix">40 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Aisselles</span>
+                        <span class="duree">45min</span>
+                        <span class="prix">50 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Avant-bras</span>
+                        <span class="duree">45min</span>
+                        <span class="prix">90 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Bras complets</span>
+                        <span class="duree">50min</span>
+                        <span class="prix">165 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Cuisses</span>
+                        <span class="duree">50min</span>
+                        <span class="prix">140 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Demi-jambes (genoux et pieds offerts)</span>
+                        <span class="duree">50min</span>
+                        <span class="prix">140 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Jambes entières (pieds offerts)</span>
+                        <span class="duree">1h15</span>
+                        <span class="prix">240 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Maillot échancré (ligne ombilicale offerte)</span>
+                        <span class="duree">45min</span>
+                        <span class="prix">75 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Maillot intégral (ligne ombilicale et SIF offerts)</span>
+                        <span class="duree">1h</span>
+                        <span class="prix">105 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">SIF</span>
+                        <span class="duree">40min</span>
+                        <span class="prix">40 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Ligne ombilicale</span>
+                        <span class="duree">30min</span>
+                        <span class="prix">40 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Fesses</span>
+                        <span class="duree">45min</span>
+                        <span class="prix">Sur devis</span>
+                    </div>
+                </div>
+
+                <h4>Forfaits Combinés - Laser Femme</h4>
+                <div class="tarif-table">
+                    <div class="tarif-item">
+                        <span class="prestation">Maillot échancré + aisselles</span>
+                        <span class="duree">1h15</span>
+                        <span class="prix">105 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Maillot Intégral + Aisselles</span>
+                        <span class="duree">1h30</span>
+                        <span class="prix">135 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">1/2 Jambes + Aisselles</span>
+                        <span class="duree">1h15</span>
+                        <span class="prix">170 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">1/2 Jambes + Maillot échancré</span>
+                        <span class="duree">1h30</span>
+                        <span class="prix">195 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">1/2 Jambes + Maillot intégral</span>
+                        <span class="duree">1h30</span>
+                        <span class="prix">225 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Jambes Complètes + Aisselles</span>
+                        <span class="duree">1h30</span>
+                        <span class="prix">270 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Jambes complètes + Maillot échancré</span>
+                        <span class="duree">1h30</span>
+                        <span class="prix">295 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Jambes complètes + Maillot intégral</span>
+                        <span class="duree">1h30</span>
+                        <span class="prix">325 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">1/2 Jambes + Maillot échancré + Aisselles</span>
+                        <span class="duree">1h30</span>
+                        <span class="prix">235 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">1/2 Jambes + Maillot intégral + aisselles</span>
+                        <span class="duree">1h30</span>
+                        <span class="prix">265 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Jambes complètes + maillot échancré + aisselles</span>
+                        <span class="duree">1h30</span>
+                        <span class="prix">335 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Jambes complètes + maillot intégral + aisselles</span>
+                        <span class="duree">1h30</span>
+                        <span class="prix">365 €</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Épilation Laser Homme -->
+            <div class="tarif-category" data-category="laser-homme">
+                <h3>Épilation Laser Homme</h3>
+                <div class="tarif-table">
+                    <div class="tarif-item">
+                        <span class="prestation">Petites zones (inter Sourcils, menton, joues...)</span>
+                        <span class="duree">40min</span>
+                        <span class="prix">50 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Col de chemise</span>
+                        <span class="duree">40min</span>
+                        <span class="prix">50 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Aisselles</span>
+                        <span class="duree">45min</span>
+                        <span class="prix">60 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Avant Bras (mains offertes)</span>
+                        <span class="duree">50min</span>
+                        <span class="prix">105 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Bras entiers (mains offertes)</span>
+                        <span class="duree">1h</span>
+                        <span class="prix">180 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Torse (cou inclus)</span>
+                        <span class="duree">50min</span>
+                        <span class="prix">125 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Épaules</span>
+                        <span class="duree">40min</span>
+                        <span class="prix">90 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Ventre</span>
+                        <span class="duree">40min</span>
+                        <span class="prix">110 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Contour de barbe</span>
+                        <span class="duree">40min</span>
+                        <span class="prix">60 € à 90 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Haut du dos</span>
+                        <span class="duree">45min</span>
+                        <span class="prix">80 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Bas du Dos</span>
+                        <span class="duree">45min</span>
+                        <span class="prix">80 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Dos complet (épaules comprises)</span>
+                        <span class="duree">1h15</span>
+                        <span class="prix">190 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Fesses</span>
+                        <span class="duree">45min</span>
+                        <span class="prix">120 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">SIF</span>
+                        <span class="duree">40min</span>
+                        <span class="prix">50 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Maillot Échancré</span>
+                        <span class="duree">40min</span>
+                        <span class="prix">95 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">1/2 Jambes (genoux et pieds offerts)</span>
+                        <span class="duree">1h</span>
+                        <span class="prix">160 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Cuisses</span>
+                        <span class="duree">1h</span>
+                        <span class="prix">160 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Jambes Complètes (pieds offerts)</span>
+                        <span class="duree">1h30</span>
+                        <span class="prix">270 €</span>
+                    </div>
+                </div>
+
+                <h4>Forfaits Combinés - Laser Homme</h4>
+                <div class="tarif-table">
+                    <div class="tarif-item">
+                        <span class="prestation">Col de chemise + épaules</span>
+                        <span class="duree">1h15</span>
+                        <span class="prix">120 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Col de chemise + torse</span>
+                        <span class="duree">1h30</span>
+                        <span class="prix">155 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Torse + épaules</span>
+                        <span class="duree">1h30</span>
+                        <span class="prix">195 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Torse + Ventre</span>
+                        <span class="duree">1h30</span>
+                        <span class="prix">215 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Torse + dos complet</span>
+                        <span class="duree">2h</span>
+                        <span class="prix">295 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Col de chemise + torse + épaules</span>
+                        <span class="duree">1h30</span>
+                        <span class="prix">235 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Col de chemise + torse + Dos complet</span>
+                        <span class="duree">2h</span>
+                        <span class="prix">335 €</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soins Visage HydrActive -->
+            <div class="tarif-category" data-category="hydractive">
+                <h3>Soins Visage HydrActive</h3>
+                <p class="category-info">Technologie avancée alliant nettoyage profond, exfoliation, extraction et hydratation en un seul traitement. Votre peau est visiblement plus lumineuse, hydratée et revitalisée.</p>
+                <div class="tarif-table">
+                    <div class="tarif-item">
+                        <span class="prestation">HydraBoost (durée du soin 50 min)</span>
+                        <span class="duree">1h30</span>
+                        <span class="prix">140 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">HydraSuprême (durée du soin 1h20)</span>
+                        <span class="duree">1h45</span>
+                        <span class="prix">180 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Hydraboost 3 séances (luminothérapie offerte)</span>
+                        <span class="duree">1h</span>
+                        <span class="prix">405 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">HydraSuprême 3 séances</span>
+                        <span class="duree">1h20</span>
+                        <span class="prix">525 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">HydrAdos 15/18 ans (durée du soin 35 min)</span>
+                        <span class="duree">1h</span>
+                        <span class="prix">70 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Luminothérapie (en complément)</span>
+                        <span class="duree">20min</span>
+                        <span class="prix">25 €</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Radiofréquence Visage -->
+            <div class="tarif-category" data-category="radiofrequence">
+                <h3>Radiofréquence Visage</h3>
+                <p class="category-info">Le soin visage par radiofréquence est une technologie avancée qui raffermit la peau, lisse les rides et redéfinit les contours du visage. Effet lifting visible.</p>
+                <div class="tarif-table">
+                    <div class="tarif-item">
+                        <span class="prestation">Séance visage (30 minutes)</span>
+                        <span class="duree">50min</span>
+                        <span class="prix">80 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Séance visage + cou (40 minutes)</span>
+                        <span class="duree">1h</span>
+                        <span class="prix">120 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Séance visage + cou + décolleté (50 minutes)</span>
+                        <span class="duree">1h15</span>
+                        <span class="prix">140 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Luminothérapie (en complément)</span>
+                        <span class="duree">20min</span>
+                        <span class="prix">25 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">6 séances Visage</span>
+                        <span class="duree">30min</span>
+                        <span class="prix">420 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">6 séances Visage + cou</span>
+                        <span class="duree">40min</span>
+                        <span class="prix">650 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">6 séances Visage + cou + décolleté</span>
+                        <span class="duree">1h</span>
+                        <span class="prix">740 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">10 séances Visage</span>
+                        <span class="duree">30min</span>
+                        <span class="prix">620 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Radiofréquence corps</span>
+                        <span class="duree">30min</span>
+                        <span class="prix">Sur devis</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lipocavitation Corps -->
+            <div class="tarif-category" data-category="lipocavitation">
+                <h3>Lipocavitation Corps</h3>
+                <p class="category-info">La lipocavitation utilise la puissance des ultrasons pour décomposer naturellement la graisse dans une zone localisée. Idéal pour affiner la silhouette et lisser la peau.</p>
+                <div class="tarif-table">
+                    <div class="tarif-item">
+                        <span class="prestation">Lipocavitation corps 30 min</span>
+                        <span class="duree">1h</span>
+                        <span class="prix">60 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Lipocavitation corps 40 min</span>
+                        <span class="duree">1h15</span>
+                        <span class="prix">80 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Lipocavitation corps 60 min</span>
+                        <span class="duree">1h30</span>
+                        <span class="prix">120 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">4 séances corps 30 min</span>
+                        <span class="duree">30min</span>
+                        <span class="prix">220 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">4 séances corps 40 min</span>
+                        <span class="duree">1h15</span>
+                        <span class="prix">300 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">4 séances corps 60 min</span>
+                        <span class="duree">1h30</span>
+                        <span class="prix">460 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">6 séances corps 30 min</span>
+                        <span class="duree">30min</span>
+                        <span class="prix">300 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">6 séances corps 40 min</span>
+                        <span class="duree">1h15</span>
+                        <span class="prix">420 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">6 séances corps 60 min</span>
+                        <span class="duree">1h30</span>
+                        <span class="prix">660 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Pressothérapie (en complément)</span>
+                        <span class="duree">30min</span>
+                        <span class="prix">Sur devis</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cryolipolyse -->
+            <div class="tarif-category" data-category="cryolipolyse">
+                <h3>Cryolipolyse</h3>
+                <p class="category-info">Technique d'amincissement et de raffermissement par le froid. Élimine les cellules graisseuses, la cellulite localisée, tonifie la peau et permet un remodelage corporel.</p>
+                <div class="tarif-table">
+                    <div class="tarif-item">
+                        <span class="prestation">Cryolipolyse - séance 1 zone</span>
+                        <span class="duree">1h30</span>
+                        <span class="prix">190 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Cryolipolyse - séance 2 zones (simultanément)</span>
+                        <span class="duree">1h45</span>
+                        <span class="prix">250 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Cryolipolyse - séance 3 zones (simultanément)</span>
+                        <span class="duree">1h45</span>
+                        <span class="prix">295 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Cryolipolyse - 1 zone + 1 séance pressothérapie</span>
+                        <span class="duree">1h30</span>
+                        <span class="prix">240 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Cryolipolyse - 2 zones + 1 séance pressothérapie</span>
+                        <span class="duree">1h45</span>
+                        <span class="prix">300 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Cryolipolyse - 3 zones + 1 séance pressothérapie</span>
+                        <span class="duree">1h45</span>
+                        <span class="prix">345 €</span>
+                    </div>
+                    <div class="tarif-item">
+                        <span class="prestation">Pressothérapie (en complément)</span>
+                        <span class="duree">50min</span>
+                        <span class="prix">Sur devis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horaires -->
+    <section id="horaires" class="horaires">
+        <div class="container">
+            <h2>Horaires d'ouverture</h2>
+            <div class="horaires-grid">
+                <div class="horaire-item">
+                    <span class="jour">Lundi</span>
+                    <span class="heures">11:00 - 22:00</span>
+                </div>
+                <div class="horaire-item">
+                    <span class="jour">Mardi</span>
+                    <span class="heures">11:00 - 22:00</span>
+                </div>
+                <div class="horaire-item">
+                    <span class="jour">Mercredi</span>
+                    <span class="heures">11:00 - 22:00</span>
+                </div>
+                <div class="horaire-item">
+                    <span class="jour">Jeudi</span>
+                    <span class="heures">11:00 - 22:00</span>
+                </div>
+                <div class="horaire-item">
+                    <span class="jour">Vendredi</span>
+                    <span class="heures">11:00 - 22:00</span>
+                </div>
+                <div class="horaire-item">
+                    <span class="jour">Samedi</span>
+                    <span class="heures">11:00 - 22:00</span>
+                </div>
+                <div class="horaire-item dimanche">
+                    <span class="jour">Dimanche</span>
+                    <span class="heures">13:00 - 18:00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                        </svg>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <a href="tel:0765648352">07 65 64 83 52</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                        <div>
+                            <h4>Rendez-vous</h4>
+                            <p>Sur rendez-vous uniquement</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-note">
+                    <p><strong>Important :</strong> Consultation OFFERTE et OBLIGATOIRE avant toute première séance. Certaines prestations ne peuvent pas être réservées en ligne. Merci d'appeler le 07 65 64 83 52.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Alba MindEsthetic Studio</h3>
+                    <p>Révélez votre beauté naturelle</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#accueil">Accueil</a>
+                    <a href="#services">Services</a>
+                    <a href="#tarifs">Tarifs</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Alba MindEsthetic Studio. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
