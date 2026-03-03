@@ -86,10 +86,13 @@ img {
 }
 
 .logo {
-    font-family: var(--font-heading);
-    font-size: 1.8rem;
-    color: var(--color-secondary);
-    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
 }
 
 .nav-menu {
@@ -169,6 +172,13 @@ img {
     padding: 20px;
 }
 
+.hero-logo {
+    width: clamp(180px, 35vw, 320px);
+    height: auto;
+    margin: 0 auto 30px;
+    display: block;
+}
+
 .hero h1 {
     font-size: clamp(2.5rem, 6vw, 4.5rem);
     color: var(--color-white);
@@ -178,7 +188,7 @@ img {
 
 .tagline {
     font-size: clamp(1rem, 2vw, 1.3rem);
-    color: var(--color-secondary);
+    color: var(--color-light);
     margin-bottom: 40px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -349,11 +359,6 @@ img {
     color: var(--color-white);
 }
 
-.tarif-category {
-    margin-bottom: 60px;
-    animation: fadeIn 0.5s ease;
-}
-
 .tarif-category.hidden {
     display: none;
 }
@@ -367,20 +372,6 @@ img {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.tarif-category h3 {
-    font-size: 1.8rem;
-    color: var(--color-primary);
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid var(--color-secondary);
-}
-
-.tarif-category h4 {
-    font-size: 1.3rem;
-    color: var(--color-secondary);
-    margin: 40px 0 20px;
 }
 
 .category-info {
@@ -714,4 +705,428 @@ img {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* ── Instagram navbar icon ────────────────────────────────── */
+.nav-instagram {
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    opacity: 0.8;
+    transition: var(--transition);
+    margin-left: 20px;
+    flex-shrink: 0;
+}
+
+.nav-instagram:hover {
+    opacity: 1;
+    color: var(--color-secondary);
+}
+
+/* ── Hero buttons ─────────────────────────────────────────── */
+.hero-btns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-hero-rdv {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: transparent;
+    color: var(--color-white);
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.btn-hero-rdv:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--color-white);
+}
+
+/* ── Service card RDV buttons ─────────────────────────────── */
+.service-card-btns {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-rdv-card {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid var(--color-secondary);
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.btn-rdv-card:hover {
+    background-color: transparent;
+    color: var(--color-secondary);
+}
+
+/* ── Galerie ──────────────────────────────────────────────── */
+.galerie {
+    padding: 100px 0;
+    background-color: var(--color-white);
+}
+
+.galerie h2 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.galerie-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.galerie-grid figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 4px;
+    position: relative;
+}
+
+.galerie-grid figure img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.galerie-grid figure:hover img {
+    transform: scale(1.03);
+}
+
+.galerie-grid figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px 12px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.55));
+    color: #fff;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    border-radius: 0 0 4px 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.galerie-grid figure:hover figcaption {
+    opacity: 1;
+}
+
+/* Placeholder galerie */
+.galerie-placeholder .placeholder-inner {
+    aspect-ratio: 4 / 3;
+    background-color: var(--color-light);
+    border: 2px dashed rgba(185, 157, 113, 0.4);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--color-text-light);
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+.galerie-placeholder .placeholder-inner svg {
+    stroke: var(--color-secondary);
+    opacity: 0.6;
+}
+
+.galerie-placeholder figcaption {
+    opacity: 0 !important; /* hide caption on placeholder */
+}
+
+/* ── Tarif category accordion ─────────────────────────────── */
+.tarif-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tarif-category {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    animation: fadeIn 0.5s ease;
+}
+
+.tarif-category.hidden {
+    display: none;
+}
+
+.tarif-category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 28px;
+    cursor: pointer;
+    border-bottom: 2px solid var(--color-secondary);
+    user-select: none;
+}
+
+.tarif-category-header h3 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.tarif-category-header .chevron {
+    stroke: var(--color-secondary);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.tarif-category.open .tarif-category-header .chevron {
+    transform: rotate(180deg);
+}
+
+/* Body accordion */
+.tarif-category-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.45s ease;
+}
+
+.tarif-category.open .tarif-category-body {
+    max-height: 3000px;
+}
+
+.tarif-category-body .tarif-table {
+    border-radius: 0;
+    box-shadow: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.tarif-category-body h4 {
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+    padding: 24px 28px 12px;
+}
+
+/* RDV button inside tarif */
+.tarif-rdv {
+    padding: 20px 28px;
+    text-align: right;
+}
+
+/* ── "À savoir" accordion ─────────────────────────────────── */
+.a-savoir {
+    margin: 0 28px 4px;
+    border: 1px solid rgba(185, 157, 113, 0.3);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.a-savoir-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    background: rgba(185, 157, 113, 0.07);
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.a-savoir-toggle .chevron {
+    stroke: var(--color-secondary);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.a-savoir.open .a-savoir-toggle .chevron {
+    transform: rotate(180deg);
+}
+
+.a-savoir-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+
+.a-savoir.open .a-savoir-body {
+    max-height: 600px;
+}
+
+.a-savoir-section {
+    padding: 16px 18px;
+    border-top: 1px solid rgba(185, 157, 113, 0.2);
+}
+
+.a-savoir-section strong {
+    display: block;
+    color: var(--color-primary);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.a-savoir-section p {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ── Bouton RDV flottant ──────────────────────────────────── */
+.btn-rdv-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 14px 24px;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(185, 157, 113, 0.5);
+    z-index: 999;
+    transition: var(--transition);
+}
+
+.btn-rdv-float:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    box-shadow: 0 6px 25px rgba(45, 52, 85, 0.4);
+    transform: translateY(-2px);
+}
+
+/* ── Footer actions ───────────────────────────────────────── */
+.footer-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.footer-instagram {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.footer-instagram:hover {
+    color: var(--color-secondary);
+}
+
+.footer-rdv {
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.footer-rdv:hover {
+    background-color: transparent;
+    color: var(--color-secondary);
+    outline: 1px solid var(--color-secondary);
+}
+
+/* ── Responsive additions ─────────────────────────────────── */
+@media (max-width: 768px) {
+    .galerie-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tarif-category-header {
+        padding: 18px 20px;
+    }
+
+    .tarif-category-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .tarif-rdv {
+        padding: 16px 20px;
+        text-align: center;
+    }
+
+    .a-savoir {
+        margin: 0 20px 4px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-actions {
+        align-items: center;
+    }
+
+    .btn-rdv-float {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 18px;
+        font-size: 0.78rem;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-instagram {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .galerie-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .service-card-btns {
+        flex-direction: column;
+    }
 }
