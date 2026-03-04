@@ -54,7 +54,7 @@ function renderGalerie() {
     if (item.fichier) {
       return `
         <figure>
-          <img src="${item.fichier}" alt="${item.legende}" loading="lazy">
+          <img src="images/${item.fichier}" alt="${item.legende}" loading="lazy">
           <figcaption>${item.legende}</figcaption>
         </figure>`;
     } else {
