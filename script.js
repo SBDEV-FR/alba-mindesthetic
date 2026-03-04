@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderHoraires();
 
   // Fade-in sur les éléments générés
-  document.querySelectorAll('.service-card, .tarif-category, .contact-item, .horaires-grid, .galerie-grid figure').forEach(el => {
+  document.querySelectorAll('.service-card, .tarif-category, .contact-item, .horaires-grid').forEach(el => {
     el.classList.add('fade-in');
     observer.observe(el);
   });
