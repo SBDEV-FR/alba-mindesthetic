@@ -707,6 +707,11 @@ img {
     transform: translateY(0);
 }
 
+.galerie-grid figure.fade-in {
+    transform: none;
+    transition: opacity 0.25s ease;
+}
+
 /* ── Instagram navbar icon ────────────────────────────────── */
 .nav-instagram {
     display: flex;
